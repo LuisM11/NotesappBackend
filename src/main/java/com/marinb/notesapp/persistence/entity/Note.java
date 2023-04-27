@@ -16,7 +16,7 @@ public class Note {
     private String title;
     @Column(nullable = false, length = 1000)
     private String content;
-    @Column(nullable = false, columnDefinition = "TINYINT(1) DEFAULT 0")
+    @Column(nullable = false)
     private boolean archived;
     @Column(name = "last_modified",nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime lastModified;
